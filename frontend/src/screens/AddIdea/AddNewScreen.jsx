@@ -18,7 +18,7 @@ const AddNewScreen = () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:3000/user", data);
+      const response = await axios.post("https://project-ideas-backend.onrender.com/user", data);
       toast.success("Idea saved successfully!", {
         onClose: () => navigate("/"),
       });
