@@ -6,7 +6,7 @@ const Tabs = () => {
   const [Ideas, setIdeas] = useState([]);
   const fetchIdeas = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/ideas");
+      const response = await axios.get("https://project-ideas-backend.onrender.com/ideas");
 
       console.log("Ideas response:", response.data);
       setIdeas(response.data);
