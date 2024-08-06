@@ -35,7 +35,7 @@ app.get("/ideas", async (req, res) => {
     });
     res.status(200).json(ideas);
   } catch (error) {
-    res.status(500).json({ error: "An error occurred while fetching ideas" });
+    res.status(500).json(error);
   }
 });
 
